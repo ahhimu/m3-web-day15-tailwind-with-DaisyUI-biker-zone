@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,14 +17,27 @@
             font-family: "Poppins", serif;
         }
     </style>
+     <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                'bike-primary-clr': '#E76F51',
+                'bike-primary-bg': 'rgba(231, 111, 81, 0.1)',
+              }
+            }
+          }
+        }
+      </script>
 </head>
 
 <body class="font-poppins">
     <!-- Header Section -->
-     <header>
+     <header class="md:container mx-auto">
         <nav>
             <div class="navbar bg-base-100">
-                <div class="navbar-start">
+                <div class="flex-1">
                   <div class="dropdown">
                     <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
                       <svg
@@ -51,7 +64,7 @@
                       <li><a>Contact</a></li>
                     </ul>
                   </div>
-                  <a class="btn btn-ghost text-xl">Bike Dekho</a>
+                  <a class="font-bold text-xl">Bike Dekho</a>
                 </div>
                 <div class="navbar-center hidden lg:flex">
                   <ul class="menu menu-horizontal px-1">
@@ -62,15 +75,115 @@
                     <li><a>Contact</a></li>
                   </ul>
                 </div>
-                <div class="navbar-end">
-                  <a class="btn btn-error">Login</a>
+                <div class="">
+                  <a class="btn bg-bike-primary-clr text-white">Login</a>
                 </div>
               </div>
         </nav>
+        <!-- Slider/Carousel -->
+        <div class="carousel w-full bg-gradient-to-r from-blue-500 to-green-500">
+            <!-- Slide 1 -->
+            <div id="slide1" class="carousel-item relative lg:h-[550px] w-full">
+                <div class="flex flex-col lg:flex-row p-12 lg:p-24">
+                    <!-- Text Content -->
+                     <div class="space-y-1 flex-1">
+                        <h2 class="font-bold text text-6xl">Ride-on Z900RS CAFE ABS
+                            The Retro Revolution is Here <br> with Smile</h2>
+                        <p>Amet minim mollit non deserunt ullamco 
+                            est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                            <button class="btn bg-bike-primary-clr text-white">Purchase</button>
+                     </div>
+                     <!-- Image Content -->
+                      <div class="flex-1">
+                        <img
+                        src="images/slider/bike1.png"
+                        class="w-[400px]" />
+                      </div>
+                </div>
+              <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                <a href="#slide4" class="btn btn-circle bg-transparent">❮</a>
+                <a href="#slide2" class="btn btn-circle bg-transparent">❯</a>
+              </div>
+            </div>
+
+                        <!-- Slide 2 -->
+                        <div id="slide2" class="carousel-item relative lg:h-[550px] w-full">
+                            <div class="flex flex-col lg:flex-row p-12 lg:p-24">
+                                <!-- Text Content -->
+                                 <div class="space-y-1 flex-1">
+                                    <h2 class="font-bold text text-6xl">Ride-The Ducati Monster 30 Anniversario limited-edition <br> with Smile</h2>
+                                    <p>Amet minim mollit non deserunt ullamco 
+                                        est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                                        <button class="btn bg-bike-primary-clr text-white">Purchase</button>
+                                 </div>
+                                 <!-- Image Content -->
+                                  <div class="flex-1">
+                                    <img
+                                    src="images/slider/bike2.png"
+                                    class="w-[400px]" />
+                                  </div>
+                            </div>
+                          <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                            <a href="#slide1" class="btn btn-circle bg-transparent">❮</a>
+                            <a href="#slide3" class="btn btn-circle bg-transparent">❯</a>
+                          </div>
+                        </div>
+
+
+                                    <!-- Slide 3 -->
+                         <div id="slide3" class="carousel-item relative lg:h-[550px] w-full">
+                <div class="flex flex-col lg:flex-row p-12 lg:p-24">
+                    <!-- Text Content -->
+                     <div class="space-y-1 flex-1">
+                        <h2 class="font-bold text text-6xl">Ride-on R15 V4 <br> with Smile</h2>
+                        <p>Amet minim mollit non deserunt ullamco 
+                            est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                            <button class="btn bg-bike-primary-clr text-white">Purchase</button>
+                     </div>
+                     <!-- Image Content -->
+                      <div class="flex-1">
+                        <img
+                        src="images/slider/bike3.png"
+                        class="w-[400px]" />
+                      </div>
+                </div>
+              <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                <a href="#slide2" class="btn btn-circle bg-transparent">❮</a>
+                <a href="#slide4" class="btn btn-circle bg-transparent">❯</a>
+              </div>
+                         </div>
+
+
+                        <!-- Slide 4 -->
+                        <div id="slide4" class="carousel-item relative lg:h-[550px] w-full">
+                            <div class="flex flex-col lg:flex-row p-12 lg:p-24">
+                                <!-- Text Content -->
+                                 <div class="space-y-1 flex-1">
+                                    <h2 class="font-bold text text-6xl">Harley-Davidson LiveWire <br> -THE SILENT ALARM-</h2>
+                                    <p>Amet minim mollit non deserunt ullamco 
+                                        est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                                        <button class="btn bg-bike-primary-clr text-white">Purchase</button>
+                                 </div>
+                                 <!-- Image Content -->
+                                  <div class="flex-1">
+                                    <img
+                                    src="images/slider/bike4.png"
+                                    class="w-[400px]" />
+                                  </div>
+                            </div>
+                          <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                            <a href="#slide3" class="btn btn-circle bg-transparent">❮</a>
+                            <a href="#slide1" class="btn btn-circle bg-transparent">❯</a>
+                          </div>
+                        </div>
+
+
+          </div>
+
      </header>
 
     <!-- Main Section -->
-     <main>
+     <main class="md:container mx-auto">
        
      </main>
 
